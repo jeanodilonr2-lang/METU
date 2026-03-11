@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Jean Odilon</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+color:white;
+text-align:center;
+
+/* FOND ELECTRONIQUE */
+background:
+radial-gradient(circle,#00ffff33 2px,transparent 2px),
+radial-gradient(circle,#00ffff33 2px,transparent 2px),
+linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background-size:40px 40px,40px 40px,cover;
+}
+
+/* BIENVENUE */
+#welcome{
+position:fixed;
+width:100%;
+height:100vh;
+background:rgba(17,17,22,0.93);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:50px;
+font-weight:bold;
+animation:fadeOut 3s forwards;
+z-index:9999;
+font-family:RAVIE;
+}
+
+@keyframes fadeOut{
+0%{opacity:1;}
+80%{opacity:1;}
+100%{opacity:0;visibility:hidden;}
+}
+
+/* CV */
+#cv{
+display:none;
+padding-top:60px;
+}
+
+/* TITRE */
+.title span{
+opacity:0;
+display:inline-block;
+animation:appear 1s forwards,colorChange 5s infinite;
+font-family:Algerian;
+font-size:50px;
+margin:0 5px;
+}
+
+@keyframes appear{
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes colorChange{
+0%{color:white;}
+25%{color:#00ffff;}
+50%{color:#ffcc00;}
+75%{color:#ff4d6d;}
+100%{color:white;}
+}
+
+/* PHOTO */
+.profil img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+}
+
+/* SECTION LEHIBE */
+section{
+background:white;
+color:#111;
+margin:30px auto;
+padding:40px;
+border-radius:15px;
+width:95%;
+max-width:900px;
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+transition:0.4s;
+}
+
+section:hover{
+transform:scale(1.02);
+}
+
+/* TITRE SECTION */
+h2{
+color:#0077ff;
+margin-bottom:15px;
+font-family:RAVIE;
+}
+
+/* LISTE */
+ol,ul{
+text-align:left;
+max-width:500px;
+margin:auto;
+}
+
+li{
+margin:6px 0;
+font-size:17px;
+}
+
+/* BOUTON VOIR PLUS */
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#0077ff;
+color:white;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#00c3ff;
+transform:scale(1.1);
+}
+
+/* SOCIAL */
+.social a{
+margin:20px;
+font-size:45px;
+color:#0077ff;
+transition:0.3s;
+}
+
+.social a:hover{
+transform:scale(1.3);
+color:#ff6600;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:15px;
+background:#111;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="welcome">RANDRIANANTENAINA Jean Odilon</div>
+
+<div id="cv">
+
+<h1 class="title">
+<span style="animation-delay:0.5s">RANDRIANANTENAINA</span>
+<span style="animation-delay:1s">Jean</span>
+<span style="animation-delay:1.5s">Odilon</span>
+</h1>
+
+<h3>Étudiant Université de Fianarantsoa (EMIT)</h3>
+
+<section class="profil">
+
+<img src="rj odilon.jpg">
+
+<h2>À propos de moi</h2>
+
+<p>
+Je suis étudiant à l’Université de Fianarantsoa depuis 2025.
+Je m'intéresse à l’informatique et au développement web.
+</p>
+
+
+</section>
+
+<section>
+
+<h2>Informations personnelles</h2>
+
+<ol>
+<li><strong>Nom :</strong> RANDRIANANTENAINA</li>
+<li><strong>Prénom :</strong> Jean Odilon</li>
+<li><strong>Date de naissance :</strong> 16 février 2006</li>
+<li><strong>Lieu :</strong> Ikalamavony</li>
+<li><strong>Age :</strong> 20 ans</li>
+<li><strong>Situation :</strong> Célibataire</li>
+<li><strong>Nationalité :</strong> Malagasy</li>
+</ol>
+
+
+</section>
+
+<section>
+
+<h2>Compétences</h2>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Python</li>
+<li>JavaScript</li>
+<li>Français</li>
+</ul>
+
+
+</section>
+
+<section>
+
+<h2>Réseaux Sociaux</h2>
+
+<div class="social">
+
+<a href="https://www.facebook.com/profile.php?id=100071849756449"><i class="fab fa-facebook"></i></a>
+
+<a href="https://www.instagram.com/odilonrj"><i class="fab fa-instagram"></i></a>
+
+<a href="https://github.com/jeanodilonr2-lang"><i class="fab fa-github"></i></a>
+
+<a href="https://www.linkedin.com/in/jean-odilon-r-5773983aa"><i class="fab fa-linkedin"></i></a>
+
+<a href="https://wa.me/261387797857"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Adresse</h2>
+
+<ol>
+
+<li>
+<a href="https://www.google.com/maps/search/Andrainjato-Fianarantsoa-Madagascar">
+Actuelle : Andrainjato, Fianarantsoa
+</a>
+</li>
+
+<li>
+<a href="https://www.google.com/maps/search/Ikalamavony-Madagascar">
+D'origine : Ikalamavony
+</a>
+</li>
+
+</ol>
+
+</section>
+
+<footer>
+
+<p>© 2026 - Jean Odilon</p>
+
+</footer>
+
+</div>
+
+<script>
+
+setTimeout(()=>{
+document.getElementById("cv").style.display="block";
+},3000);
+
+</script>
+
+</body>
+</html>
